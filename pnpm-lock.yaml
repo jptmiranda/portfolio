@@ -5,12 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@fontsource/nunito':
-    specifier: ^5.0.8
-    version: 5.0.8
-  '@fontsource/pacifico':
-    specifier: ^5.0.8
-    version: 5.0.8
   '@iconify-json/logos':
     specifier: ^1.1.35
     version: 1.1.35
@@ -68,9 +62,6 @@ devDependencies:
   typescript:
     specifier: ^5.0.0
     version: 5.2.2
-  unplugin-fonts:
-    specifier: ^1.0.3
-    version: 1.0.3(vite@4.4.9)
   unplugin-icons:
     specifier: ^0.16.6
     version: 0.16.6
@@ -345,14 +336,6 @@ packages:
   /@eslint/js@8.48.0:
     resolution: {integrity: sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: true
-
-  /@fontsource/nunito@5.0.8:
-    resolution: {integrity: sha512-Sb5uROR+aiS6T0CshbDAkjHmLXyWkWXCkDnx4K8fbRFPfmLpw6vKCu4iwb0+RuJDX519o98H/Qouk6p1umkFEQ==}
-    dev: true
-
-  /@fontsource/pacifico@5.0.8:
-    resolution: {integrity: sha512-0WQ50ZzIv3dP98ET8Pthr12cF6f8ova3FslIXjrtwh9mo2Xo60T1hzUhVNfZLFVtwd2MVH6MNVa85OCfqZ4/+w==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.11:
@@ -2552,20 +2535,6 @@ packages:
     engines: {node: '>=14.0'}
     dependencies:
       busboy: 1.6.0
-    dev: true
-
-  /unplugin-fonts@1.0.3(vite@4.4.9):
-    resolution: {integrity: sha512-6Wq0SMhMznUx7DTkqr/ogCvWg2vFSCApHmhUcUISxqfnuME2B/KRLa6+bWyX3sbPNhYsW4zI7jvUkkmIumwenw==}
-    peerDependencies:
-      '@nuxt/kit': ^3.0.0
-      vite: ^2.0.0 || ^3.0.0 || ^4.0.0
-    peerDependenciesMeta:
-      '@nuxt/kit':
-        optional: true
-    dependencies:
-      fast-glob: 3.3.1
-      unplugin: 1.4.0
-      vite: 4.4.9(@types/node@20.5.7)
     dev: true
 
   /unplugin-icons@0.16.6:
