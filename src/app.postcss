@@ -1,0 +1,25 @@
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/700.css';
+@import '@fontsource/pacifico/400.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-foreground: 233 24% 19%;
+		--color-background: 0 0% 89%;
+		--color-primary: 307 59% 28%;
+		--color-secondary: 300 20% 99%;
+		--color-accent: 306 42% 18%;
+	}
+
+	:root[class~='dark'] {
+		--color-foreground: 0 0% 89%;
+		--color-background: 233 24% 19%;
+		--color-primary: 307 59% 28%;
+		--color-secondary: 300 20% 19%;
+		--color-accent: 306 42% 48%;
+	}
+}
