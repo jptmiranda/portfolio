@@ -1,6 +1,8 @@
 <script>
 	import { Navbar } from '$lib';
-	import '../app.postcss';
+	import '@fontsource-variable/nunito';
+	import '@fontsource/pacifico/400.css';
+	import '../app.css';
 </script>
 
 <Navbar />

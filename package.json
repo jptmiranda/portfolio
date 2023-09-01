@@ -15,7 +15,7 @@
 		"test:unit": "vitest"
 	},
 	"devDependencies": {
-		"@fontsource/nunito": "^5.0.8",
+		"@fontsource-variable/nunito": "^5.0.9",
 		"@fontsource/pacifico": "^5.0.8",
 		"@iconify-json/logos": "^1.1.35",
 		"@iconify-json/octicon": "^1.1.47",
