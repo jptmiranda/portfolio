@@ -1,6 +1,6 @@
 <script>
 	import { Navbar } from '$lib';
-	import '../app.css';
+	import '../app.postcss';
 </script>
 
 <Navbar />

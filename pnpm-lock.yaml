@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@fontsource/nunito':
+    specifier: ^5.0.8
+    version: 5.0.8
+  '@fontsource/pacifico':
+    specifier: ^5.0.8
+    version: 5.0.8
   '@iconify-json/logos':
     specifier: ^1.1.35
     version: 1.1.35
@@ -336,6 +342,14 @@ packages:
   /@eslint/js@8.48.0:
     resolution: {integrity: sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
+  /@fontsource/nunito@5.0.8:
+    resolution: {integrity: sha512-Sb5uROR+aiS6T0CshbDAkjHmLXyWkWXCkDnx4K8fbRFPfmLpw6vKCu4iwb0+RuJDX519o98H/Qouk6p1umkFEQ==}
+    dev: true
+
+  /@fontsource/pacifico@5.0.8:
+    resolution: {integrity: sha512-0WQ50ZzIv3dP98ET8Pthr12cF6f8ova3FslIXjrtwh9mo2Xo60T1hzUhVNfZLFVtwd2MVH6MNVa85OCfqZ4/+w==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.11:
