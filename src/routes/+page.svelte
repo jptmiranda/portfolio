@@ -1,5 +1,5 @@
 <main>
-	<div class="mt-8 h-xs w-xs mx-auto bg-secondary" />
+	<div class="block mt-8 h-64 w-64 mx-auto bg-secondary" />
 
 	<h1 class="mt-8 font-pacifico text-4xl">João Miranda</h1>
 
@@ -15,7 +15,7 @@
 		</h2>
 
 		<p class="mt-2 indent-3">
-			Hello, I'm a Fullstack Developer with 2.5 years of experience, specializing in web solutions.
+			Hello, I'm a full-stack developer with 2.5 years of experience specializing in web solutions.
 			My journey in the web development world has led me to work on a diverse range of projects,
 			from maintaining and revamping company websites to developing backoffice applications and
 			tools.
@@ -23,7 +23,7 @@
 
 		<p class="mt-2 indent-3">
 			A highlight in my career has been integrating bank APIs to facilitate home loan credit
-			simulations. These integrations have helped users with insights to make informed financial
+			simulations. These integrations have provided users with insights to make informed financial
 			decisions without making a single transaction.
 		</p>
 
