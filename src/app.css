@@ -12,7 +12,7 @@
 	}
 
 	:root[class~='dark'] {
-		--color-foreground: 0 0% 89%;
+		--color-foreground: 308 37% 92%;
 		--color-background: 233 24% 19%;
 		--color-primary: 307 59% 28%;
 		--color-secondary: 20 46% 83%;

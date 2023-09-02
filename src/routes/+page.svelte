@@ -14,6 +14,24 @@
 			About
 		</h2>
 
-		<p class="mt-2 indent-3">Hello,</p>
+		<p class="mt-2 indent-3">
+			Hello, I'm a Fullstack Developer with 2.5 years of experience, specializing in web solutions.
+			My journey in the web development world has led me to work on a diverse range of projects,
+			from maintaining and revamping company websites to developing backoffice applications and
+			tools.
+		</p>
+
+		<p class="mt-2 indent-3">
+			A highlight in my career has been integrating bank APIs to facilitate home loan credit
+			simulations. These integrations have helped users with insights to make informed financial
+			decisions without making a single transaction.
+		</p>
+
+		<p class="mt-2 indent-3">
+			Always eager to explore, I'm driven by new tech innovations and am constantly on the hunt for
+			the next big thing in the digital world. I've also recently started venturing into the DevOps
+			realm, aiming to optimize CI/CD flows and how applications are integrated into
+			infrastructures.
+		</p>
 	</section>
 </main>
