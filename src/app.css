@@ -7,15 +7,15 @@
 		--color-foreground: 233 24% 19%;
 		--color-background: 0 0% 89%;
 		--color-primary: 307 59% 28%;
-		--color-secondary: 300 20% 99%;
-		--color-accent: 306 42% 18%;
+		--color-secondary: 20 60% 99%;
+		--color-accent: 333 88% 28%;
 	}
 
 	:root[class~='dark'] {
 		--color-foreground: 0 0% 89%;
 		--color-background: 233 24% 19%;
 		--color-primary: 307 59% 28%;
-		--color-secondary: 300 20% 19%;
-		--color-accent: 306 42% 48%;
+		--color-secondary: 20 46% 83%;
+		--color-accent: 333 87% 40%;
 	}
 }

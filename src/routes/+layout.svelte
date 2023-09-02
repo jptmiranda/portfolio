@@ -1,6 +1,6 @@
 <script>
 	import { Navbar } from '$lib';
-	import '@fontsource-variable/nunito';
+	import '@fontsource-variable/josefin-sans';
 	import '@fontsource/pacifico/400.css';
 	import '../app.css';
 </script>
@@ -15,6 +15,6 @@
 	}
 
 	:global(body) {
-		@apply max-w-xl mx-auto font-nunito;
+		@apply max-w-xl mx-auto font-josefin-sans hyphens-auto text-lg font-medium;
 	}
 </style>

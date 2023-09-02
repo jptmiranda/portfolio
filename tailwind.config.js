@@ -13,7 +13,7 @@ export default {
 			accent: 'hsl(var(--color-accent) / <alpha-value>)'
 		},
 		fontFamily: {
-			nunito: ['Nunito Variable', defaultTheme.fontFamily.serif],
+			'josefin-sans': ['Josefin Sans', defaultTheme.fontFamily.sans],
 			pacifico: ['Pacifico', 'cursive']
 		},
 		extend: {}

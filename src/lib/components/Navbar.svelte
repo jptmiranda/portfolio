@@ -31,9 +31,13 @@
 				<a href="/posts">Posts</a>
 			</li>
 
-			<button class="outline-none" type="button" on:click={toggleDarkMode}>
-				<Sun class="text-2xl hidden dark:block hover:rotate-[30deg] duration-200" />
-				<Moon class="text-2xl dark:hidden hover:rotate-[30deg] duration-200" />
+			<button
+				class="outline-none text-2xl hover:rotate-[30deg] duration-200"
+				type="button"
+				on:click={toggleDarkMode}
+			>
+				<Sun class=" hidden dark:block " />
+				<Moon class="dark:hidden" />
 			</button>
 		</ul>
 	</nav>

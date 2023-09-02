@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@fontsource-variable/nunito':
+  '@fontsource-variable/josefin-sans':
     specifier: ^5.0.9
     version: 5.0.9
   '@fontsource/pacifico':
@@ -344,8 +344,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource-variable/nunito@5.0.9:
-    resolution: {integrity: sha512-6SivBy9FfkcPJdc3MyMF1JZaWgWQL5BGmUst6gQbTAkHT1O4BmGxhW8/7v5NBa/Dh4K4dLOwXmz8zXbNddCQwQ==}
+  /@fontsource-variable/josefin-sans@5.0.9:
+    resolution: {integrity: sha512-C6/xFqAb6+HDHPw41OlEbLMvEWYAZysk6QfPJ0OI8gTa+fNbsvnGvvZ7x+cya9tA/uB+jh1WkAqIaPoGny4hHA==}
     dev: true
 
   /@fontsource/pacifico@5.0.8:
