@@ -29,6 +29,6 @@
 	<p class="mt-2 indent-3">
 		Always eager to explore, I'm driven by new tech innovations and am constantly on the hunt for
 		the next big thing in the digital world. I've also recently started venturing into the DevOps
-		realm, aiming to optimize CI/CD flows and how applications are integrated into infrastructures.
+		realm, aiming to optimize CI/CD flows and how applications are integrated in infrastructures.
 	</p>
 </section>
