@@ -1,5 +1,6 @@
 <main>
-	<div class="block mt-8 h-64 w-64 mx-auto bg-secondary" />
+	<img class="mt-8 mx-auto w-96 h-auto" src="/hero.svg" alt="" />
+	<!-- <div class="block mt-8 h-64 w-64 mx-auto bg-secondary" /> -->
 
 	<h1 class="mt-8 font-pacifico text-4xl">João Miranda</h1>
 

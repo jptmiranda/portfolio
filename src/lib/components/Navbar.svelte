@@ -23,13 +23,13 @@
 		<a class="font-pacifico text-2xl" href="/">João Miranda</a>
 
 		<ul class="flex items-center gap-4">
-			<li>
+			<!-- <li>
 				<a href="/works">Works</a>
 			</li>
 
 			<li>
 				<a href="/posts">Posts</a>
-			</li>
+			</li> -->
 
 			<li>
 				<button
