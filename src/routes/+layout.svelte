@@ -19,6 +19,7 @@
 
 <svelte:head>
 	<title>João Miranda</title>
+	<meta name="description" content="Digital craftsman from Portugal" />
 </svelte:head>
 <Navbar />
 <slot />
