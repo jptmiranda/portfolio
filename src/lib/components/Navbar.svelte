@@ -31,14 +31,17 @@
 				<a href="/posts">Posts</a>
 			</li>
 
-			<button
-				class="outline-none text-2xl hover:rotate-[30deg] duration-200"
-				type="button"
-				on:click={toggleDarkMode}
-			>
-				<Sun class=" hidden dark:block " />
-				<Moon class="dark:hidden" />
-			</button>
+			<li>
+				<button
+					class="align-middle outline-none text-2xl hover:rotate-[30deg] duration-200"
+					type="button"
+					aria-label="Theme Toggle"
+					on:click={toggleDarkMode}
+				>
+					<Sun class=" hidden dark:block " />
+					<Moon class="dark:hidden" />
+				</button>
+			</li>
 		</ul>
 	</nav>
 </header>

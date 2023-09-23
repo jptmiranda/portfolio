@@ -17,6 +17,9 @@
 	});
 </script>
 
+<svelte:head>
+	<title>João Miranda</title>
+</svelte:head>
 <Navbar />
 <slot />
 
