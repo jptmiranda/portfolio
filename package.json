@@ -6,20 +6,16 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"test": "npm run test:integration && npm run test:unit",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write .",
-		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
 		"@fontsource-variable/josefin-sans": "^5.0.9",
 		"@fontsource/pacifico": "^5.0.8",
 		"@iconify-json/carbon": "^1.1.21",
 		"@iconify-json/octicon": "^1.1.48",
-		"@playwright/test": "^1.37.1",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/adapter-cloudflare": "^2.3.3",
 		"@sveltejs/kit": "^1.24.0",
@@ -38,8 +34,7 @@
 		"tslib": "^2.6.2",
 		"typescript": "^5.2.2",
 		"unplugin-icons": "^0.16.6",
-		"vite": "^4.4.9",
-		"vitest": "^0.34.3"
+		"vite": "^4.4.9"
 	},
 	"type": "module"
 }
