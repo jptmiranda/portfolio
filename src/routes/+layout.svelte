@@ -22,7 +22,9 @@
 	<meta name="description" content="Digital craftsman from Portugal" />
 </svelte:head>
 <Navbar />
-<slot />
+<main class="py-8">
+	<slot />
+</main>
 
 <style lang="postcss">
 	:global(html) {
