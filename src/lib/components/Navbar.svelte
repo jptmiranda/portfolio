@@ -23,6 +23,9 @@
 		<a class="font-pacifico text-2xl" href="/">João Miranda</a>
 
 		<ul class="flex items-center gap-4">
+			<li>
+				<a href="/contact">Contact</a>
+			</li>
 			<!-- <li>
 				<a href="/works">Works</a>
 			</li>
