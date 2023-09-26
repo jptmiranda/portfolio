@@ -14,7 +14,7 @@
 	</h2>
 
 	<p class="mt-2 indent-3">
-		Hello, I'm a full-stack developer with two and a half years of experience specializing in web
+		Hello, I'm a full-stack developer with nearly three years of experience specializing in web
 		solutions. My journey in the web development world has led me to work on a diverse range of
 		projects, from maintaining and revamping company websites to developing backoffice applications
 		and tools.
