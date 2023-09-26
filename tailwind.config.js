@@ -14,7 +14,7 @@ export default {
 		},
 		fontFamily: {
 			'josefin-sans': ['Josefin Sans', defaultTheme.fontFamily.sans],
-			pacifico: ['Pacifico', 'cursive']
+			audiowide: ['Audiowide', 'sans-serif']
 		},
 		extend: {}
 	},

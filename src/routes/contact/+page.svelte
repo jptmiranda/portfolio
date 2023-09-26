@@ -7,7 +7,7 @@
 	const copy = (text: string) => navigator.clipboard.writeText(text);
 </script>
 
-<h1 class="font-pacifico text-4xl underline decoration-accent dark:decoration-accent-dark">
+<h1 class="font-audiowide text-4xl underline decoration-accent dark:decoration-accent-dark">
 	Contact
 </h1>
 

@@ -20,7 +20,7 @@
 
 <header>
 	<nav class="py-3 flex justify-between items-center">
-		<a class="font-pacifico text-2xl" href="/">João Miranda</a>
+		<a class="font-audiowide text-2xl" href="/">João Miranda</a>
 
 		<ul class="flex items-center gap-4">
 			<li>

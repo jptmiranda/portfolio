@@ -1,6 +1,6 @@
 <script>
 	import '@fontsource-variable/josefin-sans';
-	import '@fontsource/pacifico/400.css';
+	import '@fontsource/audiowide';
 	import '../app.css';
 	import { Navbar } from '$lib';
 	import { onNavigate } from '$app/navigation';
