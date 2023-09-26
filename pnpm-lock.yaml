@@ -11,9 +11,6 @@ devDependencies:
   '@fontsource/audiowide':
     specifier: ^5.0.12
     version: 5.0.12
-  '@fontsource/pacifico':
-    specifier: ^5.0.8
-    version: 5.0.8
   '@iconify-json/carbon':
     specifier: ^1.1.21
     version: 1.1.21
@@ -354,10 +351,6 @@ packages:
 
   /@fontsource/audiowide@5.0.12:
     resolution: {integrity: sha512-SwuwubvwlQSWYWujKS9g0m/0mlsR0rrweWzu+STIYnrfFRWku3jHQzN0qOuyiOMCUpDZOoIxsoHYWdMFoOrsSg==}
-    dev: true
-
-  /@fontsource/pacifico@5.0.8:
-    resolution: {integrity: sha512-0WQ50ZzIv3dP98ET8Pthr12cF6f8ova3FslIXjrtwh9mo2Xo60T1hzUhVNfZLFVtwd2MVH6MNVa85OCfqZ4/+w==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.11:
