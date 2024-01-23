@@ -1,0 +1,25 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<title slot="title">{title}</title>
+
+<BaseLayout title={title}>
+  <body>
+    <Navbar />
+    <slot />
+  </body>
+</BaseLayout>
+
+<style>
+  body {
+    @apply max-w-xl mx-auto px-4 font-josefin-sans hyphens-auto text-lg font-medium;
+  }
+</style>

@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="João Miranda">
+  <h1
+    class="font-audiowide text-4xl underline decoration-accent dark:decoration-accent-dark"
+  >
+    Contact
+  </h1>
+
+  <div class="mt-8 flex items-center gap-x-4">
+    <a class="flex items-center gap-x-2" href="mailto:joao.t.m@proton.me">
+      <Icon name="carbon:email" aria-label="Email Icon" /> joao.t.m@proton.me
+    </a>
+
+    <button type="button" aria-label="Copy Email">
+      <Icon name="carbon:copy" id="copy-email" />
+    </button>
+  </div>
+
+  <ul class="mt-2 flex gap-x-2 text-2xl">
+    <li class="flex items-center gap-x-4">
+      <a
+        class="flex items-center gap-x-2"
+        href="https://www.linkedin.com/in/mirandagonebald"
+        target="_blank"
+      >
+        <Icon
+          name="carbon:logo-linkedin"
+          class="-ml-0.5"
+          aria-label="LinkedIn Icon"
+        />
+      </a>
+    </li>
+
+    <li class="flex items-center gap-x-4">
+      <a
+        class="flex items-center gap-x-2"
+        href="https://github.com/mirandagonebald"
+        target="_blank"
+      >
+        <Icon name="carbon:logo-github" aria-label="Github Icon" />
+      </a>
+    </li>
+  </ul>
+</Layout>
+
+<script is:inline>
+  document.getElementById("copy-email")?.addEventListener("click", () => {
+    navigator.clipboard.writeText("joao.t.m@proton.me");
+  });
+</script>
