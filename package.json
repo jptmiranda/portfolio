@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.28",
-    "@iconify-json/octicon": "^1.1.52",
-    "@types/bun": "^1.0.11"
+    "@iconify-json/octicon": "^1.1.52"
   }
 }
