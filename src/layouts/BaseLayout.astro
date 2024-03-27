@@ -1,9 +1,7 @@
 ---
-import "@fontsource-variable/josefin-sans";
-import "@fontsource/audiowide";
-import { ViewTransitions } from "astro:transitions";
-import "../styles/main.css";
 import BaseHead from "../components/BaseHead.astro";
+import "../styles/main.css";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -11,7 +9,18 @@ import BaseHead from "../components/BaseHead.astro";
   <head>
     <BaseHead />
     <ViewTransitions />
-    <script async>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <script async is:inline>
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)

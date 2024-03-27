@@ -12,8 +12,6 @@
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource-variable/josefin-sans": "^5.0.20",
-    "@fontsource/audiowide": "^5.0.19",
     "astro": "^4.2.2",
     "astro-icon": "^1.0.2",
     "tailwindcss": "^3.4.1",
