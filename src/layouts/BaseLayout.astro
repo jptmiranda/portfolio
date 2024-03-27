@@ -1,5 +1,6 @@
 ---
-import { AstroFont } from "astro-font";
+import "@fontsource-variable/josefin-sans";
+import "@fontsource/audiowide";
 import { ViewTransitions } from "astro:transitions";
 import "../styles/main.css";
 import BaseHead from "../components/BaseHead.astro";
@@ -9,28 +10,6 @@ import BaseHead from "../components/BaseHead.astro";
 <html lang="en">
   <head>
     <BaseHead />
-    <AstroFont
-      config={[
-        {
-          name: "Josefin Sans",
-          src: [],
-          googleFontsURL:
-            "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap",
-          preload: true,
-          display: "swap",
-          fallback: "sans-serif",
-        },
-        {
-          name: "Audiowide",
-          src: [],
-          googleFontsURL:
-            "https://fonts.googleapis.com/css2?family=Audiowide&display=swap",
-          preload: true,
-          display: "swap",
-          fallback: "sans-serif",
-        },
-      ]}
-    />
     <ViewTransitions />
     <script async>
       localStorage.theme === "dark" ||
