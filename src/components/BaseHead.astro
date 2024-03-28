@@ -1,3 +1,7 @@
+---
+import { ViewTransitions } from "astro:transitions";
+---
+
 <meta charset="UTF-8" />
 <meta name="description" content="Astro description" />
 <meta name="viewport" content="width=device-width" />
@@ -5,3 +9,36 @@
 <meta name="generator" content={Astro.generator} />
 <slot name="title" />
 <link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+/>
+<ViewTransitions />
+<script async is:inline>
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ? document.documentElement.classList.add("dark")
+    : document.documentElement.classList.remove("dark");
+
+  document.addEventListener("astro:after-swap", () => {
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark");
+  });
+</script>
+<style>
+  body {
+    color: theme(colors.foreground);
+    background-color: theme(colors.background);
+  }
+</style>

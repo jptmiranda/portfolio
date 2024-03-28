@@ -12,7 +12,12 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    icon(),
+    icon({
+      include: {
+        octicon: ["sun-16", "moon-16"],
+        carbon: ["email", "copy", "logo-linkedin", "logo-github"],
+      },
+    }),
     compress(),
     robotsTxt(),
     sitemap(),

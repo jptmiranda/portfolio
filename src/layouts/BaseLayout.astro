@@ -1,5 +1,4 @@
 ---
-import { AstroFont } from "astro-font";
 import BaseHead from "../components/BaseHead.astro";
 import "../styles/main.css";
 import { ViewTransitions } from "astro:transitions";
@@ -9,50 +8,6 @@ import { ViewTransitions } from "astro:transitions";
 <html lang="en">
   <head>
     <BaseHead />
-    <ViewTransitions />
-    <AstroFont
-      config={[
-        {
-          name: "Josefin Sans",
-          src: [],
-          googleFontsURL:
-            "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap",
-          preload: true,
-          display: "swap",
-          fallback: "sans-serif",
-        },
-        {
-          name: "Audiowide",
-          src: [],
-          googleFontsURL:
-            "https://fonts.googleapis.com/css2?family=Audiowide&display=swap",
-          preload: true,
-          display: "swap",
-          fallback: "sans-serif",
-        },
-      ]}
-    />
-    <script async is:inline>
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ? document.documentElement.classList.add("dark")
-        : document.documentElement.classList.remove("dark");
-
-      document.addEventListener("astro:after-swap", () => {
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-          ? document.documentElement.classList.add("dark")
-          : document.documentElement.classList.remove("dark");
-      });
-    </script>
-    <style>
-      body {
-        color: theme(colors.foreground);
-        background-color: theme(colors.background);
-      }
-    </style>
   </head>
 
   <slot />
