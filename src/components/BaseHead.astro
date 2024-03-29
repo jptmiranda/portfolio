@@ -3,7 +3,8 @@ import { ViewTransitions } from "astro:transitions";
 ---
 
 <meta charset="UTF-8" />
-<meta name="description" content="Astro description" />
+<slot name="title" />
+<meta name="description" content="Digital Craftsman (Developer)" />
 <meta name="viewport" content="width=device-width" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -28,7 +29,6 @@ import { ViewTransitions } from "astro:transitions";
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 <meta name="theme-color" content="#000000" />
 <meta name="generator" content={Astro.generator} />
-<slot name="title" />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
