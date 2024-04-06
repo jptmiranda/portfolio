@@ -13,12 +13,15 @@
     "@astrojs/check": "^0.4.1",
     "@astrojs/sitemap": "^3.1.2",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vue": "^4.0.10",
+    "@wise-old-man/utils": "^3.3.1",
     "astro": "^4.2.2",
     "astro-compress": "^2.2.19",
     "astro-icon": "^1.0.2",
     "astro-robots-txt": "^1.0.0",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "vue": "^3.4.21"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.28",

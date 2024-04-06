@@ -1,9 +1,10 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import icon from "astro-icon";
-import compress from "astro-compress";
-import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import vue from "@astrojs/vue";
+import compress from "astro-compress";
+import icon from "astro-icon";
+import robotsTxt from "astro-robots-txt";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,5 +22,6 @@ export default defineConfig({
     compress(),
     robotsTxt(),
     sitemap(),
+    vue(),
   ],
 });

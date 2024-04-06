@@ -1,1 +1,27 @@
-<img src="https://ghchart.rshah.org/bf0d5d/jptmiranda" alt="my github chart" />
+<h2 class="mt-8 font-audiowide text-3xl">Github</h2>
+
+<div class="mt-4 container flex justify-center items-center h-[86px]">
+  <div
+    id="loading"
+    class="inline-block h-[50px] w-[50px] border-4 border-secondary border-t-primary rounded-full animate-spin"
+  >
+  </div>
+
+  <img
+    id="github-graph"
+    class="hidden"
+    onload="handleLoad()"
+    src="https://ghchart.rshah.org/bf0d5d/jptmiranda"
+    alt="my github chart"
+  />
+</div>
+
+<script is:inline>
+  function handleLoad() {
+    const graph = document.querySelector("#github-graph");
+    const loading = document.querySelector("#loading");
+
+    graph.classList.remove("hidden");
+    loading.classList.add("hidden");
+  }
+</script>

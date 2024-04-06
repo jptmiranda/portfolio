@@ -1,6 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import GithubGraph from "../components/GithubGraph.astro";
+import OsrsStats from "../components/OsrsStats.vue";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="João Miranda">
@@ -10,9 +11,7 @@ import GithubGraph from "../components/GithubGraph.astro";
     Stats
   </h1>
 
-  <h1 class="mt-8 font-audiowide text-3xl">Github</h1>
+  <GithubGraph />
 
-  <div class="mt-4">
-    <GithubGraph />
-  </div>
+  <OsrsStats />
 </Layout>
