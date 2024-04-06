@@ -10,7 +10,7 @@ const detailsList = await getDetailsList();
   <div class="mt-4" v-for="details in detailsList">
     <h3 class="text-2xl">{{ details.name }}</h3>
 
-    <div class="mt-4 inline-grid grid-cols-12 gap-x-3">
+    <div class="mt-4 inline-grid grid-cols-12 gap-x-4 gap-y-1">
       <div
         class="group flex relative justify-center items-center flex-col"
         v-for="(skill, idx) in details.skills"
@@ -24,7 +24,13 @@ const detailsList = await getDetailsList();
           {{ skill.name }}
         </span>
 
-        <img :src="skill.image" :alt="skill.name" />
+        <img
+          class="w-5 h-5"
+          width="20"
+          height="20"
+          :src="skill.image"
+          :alt="skill.name"
+        />
 
         <p>{{ skill.level }}</p>
       </div>

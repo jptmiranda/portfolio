@@ -24,7 +24,7 @@ function mapSkills(skills: MapOf<Skill, SkillValue>) {
 
     if (key === "runecrafting") {
       image =
-        "https://oldschool.runescape.wiki/images/thumb/Runecraft_icon.png/21px-Runecraft_icon.png?c278c";
+        "https://oldschool.runescape.wiki/images/thumb/Runecraft_icon.png/20px-Runecraft_icon.png";
     }
 
     return {
