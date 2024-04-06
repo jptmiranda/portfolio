@@ -1,6 +1,6 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
 import Navbar from "../components/Navbar.astro";
+import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
   title: string;
@@ -20,6 +20,6 @@ const { title } = Astro.props;
 
 <style>
   body {
-    @apply max-w-xl mx-auto px-4 font-josefin-sans hyphens-auto text-lg font-medium;
+    @apply max-w-xl mx-auto px-4 font-josefin-sans hyphens-auto text-lg font-medium pb-4;
   }
 </style>
