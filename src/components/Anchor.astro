@@ -1,0 +1,17 @@
+---
+export interface Props {
+  href: string;
+  newTab?: boolean;
+}
+
+const { href, newTab = false } = Astro.props;
+---
+
+<a
+  class="w-fit flex items-center gap-x-2 hover:bg-zinc-950 hover:text-orange-700 hover:p-1 hover:-m-1 hover:rounded"
+  rel="noopener noreferrer"
+  href={href}
+  target={newTab ? "_blank" : undefined}
+>
+  <slot />
+</a>

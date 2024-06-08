@@ -2,20 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --color-foreground: 233 24% 19%;
-    --color-background: 0 0% 89%;
-    --color-primary: 307 59% 28%;
-    --color-secondary: 20 60% 99%;
-    --color-accent: 333 87% 40%;
-  }
-
-  :root[class~="dark"] {
-    --color-foreground: 308 37% 92%;
-    --color-background: 233 24% 19%;
-    --color-primary: 307 59% 28%;
-    --color-secondary: 20 46% 83%;
-    --color-accent: 333 87% 40%;
-  }
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("/fonts/CascadiaCode.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

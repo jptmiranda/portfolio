@@ -1,13 +1,22 @@
 ---
+import { languageTag } from "@/paraglide/runtime";
 import BaseHead from "../components/BaseHead.astro";
 import "../styles/main.css";
-import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={languageTag()} dir={Astro.locals.paraglide.dir}>
   <head>
     <BaseHead />
+
+    <style>
+      body {
+        @apply min-h-screen max-w-xl mx-auto 
+          font-cascadia-code hyphens-auto flex 
+          flex-col justify-center text-white 
+          bg-zinc-900;
+      }
+    </style>
   </head>
 
   <slot />

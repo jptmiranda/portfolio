@@ -3,7 +3,6 @@ import defaultTheme from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -14,8 +13,7 @@ export default {
         accent: "hsl(var(--color-accent) / <alpha-value>)",
       },
       fontFamily: {
-        "josefin-sans": ["Josefin Sans", ...defaultTheme.fontFamily.sans],
-        audiowide: ["Audiowide", ...defaultTheme.fontFamily.sans],
+        "cascadia-code": ["CascadiaCode", ...defaultTheme.fontFamily.mono],
       },
     },
   },

@@ -1,5 +1,4 @@
 ---
-import Navbar from "../components/Navbar.astro";
 import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
@@ -13,13 +12,6 @@ const { title } = Astro.props;
 
 <BaseLayout title={title}>
   <body>
-    <Navbar />
     <slot />
   </body>
 </BaseLayout>
-
-<style>
-  body {
-    @apply max-w-xl mx-auto px-4 font-josefin-sans hyphens-auto text-lg font-medium pb-4;
-  }
-</style>

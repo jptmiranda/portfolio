@@ -1,9 +1,8 @@
 ---
-import Anchor from "@/components/Anchor.astro";
 import LanguageSwitcher from "@/components/LanguageSwitcher.astro";
 import Layout from "@/layouts/Layout.astro";
-import Icon from "node_modules/astro-icon/components/Icon.astro";
-import * as m from "../paraglide/messages.js";
+import "@/styles/main.css";
+import * as m from "../../paraglide/messages.js";
 ---
 
 <Layout title="dot">
@@ -36,33 +35,14 @@ import * as m from "../paraglide/messages.js";
       Always eager to explore, I'm driven by new tech innovations and am
       constantly on the hunt for the next big thing in the digital world. I've
       also recently started venturing into the DevOps realm, aiming to optimize
-      CI/CD flows and how applications are integrated into infrastructures.
+      CI/CD flows and how applications are integrated in infrastructures.
     </p>
   </div>
 
-  <!-- <div class="mt-10 flex flex-col items-start gap-y-1.5">
-    <Anchor href="/projects">Projects</Anchor>
+  <div class="mt-10">
+    <a class="block" href="/projects">Projects</a>
 
-    <Anchor href="/jobs">Jobs</Anchor>
-  </div> -->
-
-  <hr class="w-full border-b-[1px] border-zinc-700 my-3" />
-
-  <div class="flex flex-col items-start gap-y-1.5">
-    <Anchor href="https://github.com/jptmiranda" newTab>
-      <span>Github</span>
-      <Icon class="text-xl" name="carbon:launch" />
-    </Anchor>
-
-    <Anchor href="https://www.linkedin.com/in/jptmiranda" newTab>
-      <span>LinkedIn</span>
-      <Icon class="text-xl" name="carbon:launch" />
-    </Anchor>
-
-    <Anchor href="mailto:joao.t.m@proton.me" newTab>
-      <span>Email</span>
-      <Icon class="text-xl" name="carbon:launch" />
-    </Anchor>
+    <a class="block" href="/jobs">Jobs</a>
   </div>
 
   <LanguageSwitcher />

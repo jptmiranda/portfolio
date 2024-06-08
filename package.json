@@ -5,26 +5,26 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide && astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "postinstall": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
-    "@astrojs/sitemap": "^3.1.2",
+    "@astrojs/sitemap": "^3.1.5",
     "@astrojs/tailwind": "^5.1.0",
-    "@astrojs/vue": "^4.0.10",
-    "@wise-old-man/utils": "^3.3.1",
-    "astro": "^4.2.2",
-    "astro-compress": "^2.2.19",
-    "astro-icon": "^1.0.2",
+    "@inlang/paraglide-astro": "^0.1.26",
+    "astro": "^4.10.1",
+    "astro-compress": "^2.2.26",
+    "astro-icon": "^1.1.0",
     "astro-robots-txt": "^1.0.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.4.3",
-    "vue": "^3.4.21"
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.28",
-    "@iconify-json/octicon": "^1.1.52"
+    "@iconify-json/carbon": "^1.1.35",
+    "@iconify-json/twemoji": "^1.1.15",
+    "@inlang/paraglide-js": "1.9.1"
   }
 }
