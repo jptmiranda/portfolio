@@ -8,7 +8,6 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
   site: "https://jptmiranda.com/",
-  base: "portfolio",
   i18n: {
     locales: ["en", "pt"],
     defaultLocale: "en",
