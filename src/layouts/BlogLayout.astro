@@ -1,0 +1,17 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { title, date } = Astro.props;
+---
+
+<BaseLayout>
+  <title slot="title">{title}</title>
+
+  <main class="prose prose-invert">
+    <h1>{title}</h1>
+
+    <slot />
+
+    <p class="text-sm">Written on {date.toLocaleDateString()}</p>
+  </main>
+</BaseLayout>
