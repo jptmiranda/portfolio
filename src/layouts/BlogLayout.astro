@@ -8,32 +8,36 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout>
   <body class="markdown">
-    <slot />
+    <article>
+      <slot />
+    </article>
   </body>
 </BaseLayout>
 
 <style is:global>
-  h1,
-  h2,
-  pre.astro-code {
-    @apply my-2;
-  }
+  article {
+    h1,
+    h2,
+    pre.astro-code {
+      @apply my-2;
+    }
 
-  h1 {
-    @apply text-3xl font-bold;
-  }
+    h1 {
+      @apply text-3xl font-bold;
+    }
 
-  h2 {
-    @apply text-2xl font-bold;
-  }
+    h2 {
+      @apply text-2xl font-bold;
+    }
 
-  pre.astro-code {
-    @apply p-4 rounded-lg border-zinc-700 border;
-  }
+    pre.astro-code {
+      @apply p-4 rounded-lg border-zinc-700 border;
+    }
 
-  ul {
-    li {
-      @apply list-disc ml-4;
+    ul {
+      li {
+        @apply list-disc ml-4;
+      }
     }
   }
 </style>
