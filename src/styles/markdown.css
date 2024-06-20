@@ -1,0 +1,27 @@
+@layer components {
+  .markdown {
+    h1,
+    h2,
+    pre.astro-code {
+      @apply my-2;
+    }
+
+    h1 {
+      @apply text-3xl font-bold;
+    }
+
+    h2 {
+      @apply text-2xl font-bold;
+    }
+
+    pre.astro-code {
+      @apply p-4 rounded-lg border-zinc-700 border;
+    }
+
+    ul {
+      li {
+        @apply list-disc ml-4;
+      }
+    }
+  }
+}

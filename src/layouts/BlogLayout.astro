@@ -1,0 +1,19 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<title slot="title">{frontmatter.title}</title>
+
+<BaseLayout>
+  <body class="markdown">
+    <slot />
+  </body>
+</BaseLayout>
+
+<style lang="postcss">
+  h1 {
+    @apply text-3xl font-bold;
+  }
+</style>
