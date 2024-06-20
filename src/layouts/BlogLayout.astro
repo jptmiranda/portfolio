@@ -1,43 +1,26 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
+import { languageTag } from "@/paraglide/runtime";
+import BaseHead from "../components/BaseHead.astro";
+import "../styles/main.css";
 
-const { frontmatter } = Astro.props;
+const { title } = Astro.props;
 ---
 
-<title slot="title">{frontmatter.title}</title>
+<title slot="title">{title}</title>
 
-<BaseLayout>
-  <body class="markdown">
-    <article>
-      <slot />
-    </article>
-  </body>
-</BaseLayout>
+<html lang={languageTag()}>
+  <head>
+    <BaseHead />
 
-<style is:global>
-  article {
-    h1,
-    h2,
-    pre.astro-code {
-      @apply my-2;
-    }
-
-    h1 {
-      @apply text-3xl font-bold;
-    }
-
-    h2 {
-      @apply text-2xl font-bold;
-    }
-
-    pre.astro-code {
-      @apply p-4 rounded-lg border-zinc-700 border;
-    }
-
-    ul {
-      li {
-        @apply list-disc ml-4;
+    <style>
+      body {
+        @apply min-h-screen max-w-xl mx-auto 
+          font-cascadia-code hyphens-auto flex 
+          flex-col justify-center text-white 
+          bg-zinc-900;
       }
-    }
-  }
-</style>
+    </style>
+  </head>
+
+  <slot />
+</html>

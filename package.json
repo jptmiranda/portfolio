@@ -13,18 +13,18 @@
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/mdx": "^3.1.1",
-    "@astrojs/sitemap": "^3.1.5",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
-    "@inlang/paraglide-astro": "^0.1.26",
-    "astro": "^4.10.1",
-    "astro-compress": "^2.2.26",
+    "@inlang/paraglide-astro": "^0.1.30",
+    "astro": "^4.11.0",
+    "astro-compress": "^2.2.28",
     "astro-icon": "^1.1.0",
     "astro-robots-txt": "^1.0.0",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.35",
+    "@iconify-json/carbon": "^1.1.36",
     "@iconify-json/twemoji": "^1.1.15",
     "@inlang/paraglide-js": "1.9.1",
     "@tailwindcss/typography": "^0.5.13"

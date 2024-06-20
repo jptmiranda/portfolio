@@ -11,6 +11,18 @@ const projectsCollection = defineCollection({
   }),
 });
 
+const postsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    date: z.preprocess(
+      (arg) => (typeof arg === "string" ? new Date(arg) : arg),
+      z.date()
+    ),
+  }),
+});
+
 export const collections = {
   projects: projectsCollection,
+  posts: postsCollection,
 };
