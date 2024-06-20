@@ -2,11 +2,18 @@
 import BaseHead from "@/components/BaseHead.astro";
 import { languageTag } from "@/paraglide/runtime";
 import "@/styles/main.css";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang={languageTag()} dir={Astro.locals.paraglide.dir}>
   <head>
+    <title>{title}</title>
     <BaseHead />
 
     <style>
