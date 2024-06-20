@@ -1,13 +1,13 @@
 ---
 import LanguageSwitcher from "@/components/LanguageSwitcher.astro";
+import Links from "@/components/Links.astro";
 import Layout from "@/layouts/Layout.astro";
-import "@/styles/main.css";
 import * as m from "../../paraglide/messages.js";
 ---
 
 <Layout title="dot">
   <h1 class="text-xl">João "dot" Miranda</h1>
-  <h2 class="text-zinc-500 leading-none">
+  <h2 class="text-zinc-500 leading-none mt-1">
     <span>Full Stack Developer</span>
     <span
       class="inline-block align-middle size-1 bg-orange-700 rounded-full animate-pulse"
@@ -17,33 +17,38 @@ import * as m from "../../paraglide/messages.js";
 
   <div class="flex flex-col gap-y-6 mt-10">
     <p class="leading-relaxed">
-      Hello, I'm a full-stack developer with nearly three years of experience
-      specializing in web solutions. My journey in the web development world has
-      led me to work on a diverse range of projects, from maintaining and
-      revamping company websites to developing backoffice applications and
-      tools.
+      Olá, eu sou um full stack developer com três anos de experiência
+      especializado em aplicações web. A minha jornada no mundo de
+      desenvolvimento web levou-me a trabalhar numa variedade de projetos, desde
+      manter e renovar websites de empresas a desenvolver aplicações e
+      ferramentas de backoffice.
     </p>
 
     <p class="leading-relaxed">
-      A highlight in my career has been integrating bank APIs to facilitate home
-      loan credit simulations. These integrations have provided users with
-      insights to make informed financial decisions without making a single
-      transaction.
+      Um destaque na minha carreira foi a integração de APIs bancárias para
+      facilitar simulações de créditos de habitação. Estas integrações
+      forneceram aos utilizadores percepções para tomar decisões financeiras
+      informadas sem ter que realizar uma única transação.
     </p>
 
     <p class="leading-relaxed">
-      Always eager to explore, I'm driven by new tech innovations and am
-      constantly on the hunt for the next big thing in the digital world. I've
-      also recently started venturing into the DevOps realm, aiming to optimize
-      CI/CD flows and how applications are integrated in infrastructures.
+      Sempre ansioso por explorar, uma das minhas principais fontes de motivação
+      é a exploração de novas tecnologias e estou constantemente à busca da
+      próxima coisa nova no mundo digital. Também tenho alguma experiência no
+      que toca a DevOps e estou sempre à procura de melhorar os flows de CI/CD
+      nos projetos em que trabalho.
     </p>
   </div>
 
-  <div class="mt-10">
-    <a class="block" href="/projects">Projects</a>
+  <!-- <div class="mt-10 flex flex-col items-start gap-y-1.5">
+    <Anchor href="/projects">Projects</Anchor>
 
-    <a class="block" href="/jobs">Jobs</a>
-  </div>
+    <Anchor href="/jobs">Jobs</Anchor>
+  </div> -->
+
+  <hr class="w-full border-b-[1px] border-zinc-700 my-6" />
+
+  <Links />
 
   <LanguageSwitcher />
 </Layout>

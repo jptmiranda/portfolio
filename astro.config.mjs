@@ -18,7 +18,7 @@ export default defineConfig({
     }),
     icon({
       include: {
-        carbon: ["launch"],
+        carbon: ["launch", "copy"],
         twemoji: ["flag-united-states", "flag-portugal"],
       },
     }),

@@ -1,14 +1,14 @@
 ---
-import Anchor from "@/components/Anchor.astro";
 import LanguageSwitcher from "@/components/LanguageSwitcher.astro";
+import Links from "@/components/Links.astro";
 import Layout from "@/layouts/Layout.astro";
-import Icon from "node_modules/astro-icon/components/Icon.astro";
 import * as m from "../paraglide/messages.js";
 ---
 
 <Layout title="dot">
   <h1 class="text-xl">João "dot" Miranda</h1>
-  <h2 class="text-zinc-500 leading-none">
+
+  <h2 class="text-zinc-500 leading-none mt-1">
     <span>Full Stack Developer</span>
     <span
       class="inline-block align-middle size-1 bg-orange-700 rounded-full animate-pulse"
@@ -33,10 +33,10 @@ import * as m from "../paraglide/messages.js";
     </p>
 
     <p class="leading-relaxed">
-      Always eager to explore, I'm driven by new tech innovations and am
-      constantly on the hunt for the next big thing in the digital world. I've
-      also recently started venturing into the DevOps realm, aiming to optimize
-      CI/CD flows and how applications are integrated into infrastructures.
+      Always eager to explore, one of my main sources of motivation is the
+      exploration of new technologies, so I am constantly searching for next new
+      thing in the digital world. I also have some experience in DevOps since I
+      am always looking to improve CI/CD flows on the projects I work on.
     </p>
   </div>
 
@@ -46,24 +46,9 @@ import * as m from "../paraglide/messages.js";
     <Anchor href="/jobs">Jobs</Anchor>
   </div> -->
 
-  <hr class="w-full border-b-[1px] border-zinc-700 my-3" />
+  <hr class="w-full border-b-[1px] border-zinc-700 my-6" />
 
-  <div class="flex flex-col items-start gap-y-1.5">
-    <Anchor href="https://github.com/jptmiranda" newTab>
-      <span>Github</span>
-      <Icon class="text-xl" name="carbon:launch" />
-    </Anchor>
-
-    <Anchor href="https://www.linkedin.com/in/jptmiranda" newTab>
-      <span>LinkedIn</span>
-      <Icon class="text-xl" name="carbon:launch" />
-    </Anchor>
-
-    <Anchor href="mailto:joao.t.m@proton.me" newTab>
-      <span>Email</span>
-      <Icon class="text-xl" name="carbon:launch" />
-    </Anchor>
-  </div>
+  <Links />
 
   <LanguageSwitcher />
 </Layout>

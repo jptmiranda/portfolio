@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon/components";
+import Anchor from "./Anchor.astro";
+---
+
+<div class="flex flex-col items-start gap-y-1.5">
+  <Anchor href="https://github.com/jptmiranda" newTab>
+    <span>Github</span>
+    <Icon class="text-xl" name="carbon:launch" />
+  </Anchor>
+
+  <Anchor href="https://www.linkedin.com/in/jptmiranda" newTab>
+    <span>LinkedIn</span>
+    <Icon class="text-xl" name="carbon:launch" />
+  </Anchor>
+
+  <div class="flex items-center gap-2">
+    <Anchor href="mailto:joao.t.m@proton.me" newTab>
+      <span>Email</span>
+      <Icon class="text-xl" name="carbon:launch" />
+    </Anchor>
+
+    <button
+      type="button"
+      onclick="navigator.clipboard.writeText('joao.t.m@proton.me')"
+      class="w-fit hover:bg-zinc-950 hover:text-orange-700 hover:p-1 hover:-m-1 hover:rounded"
+    >
+      <Icon class="text-xl" name="carbon:copy" />
+    </button>
+  </div>
+</div>
