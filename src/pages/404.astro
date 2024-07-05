@@ -1,26 +1,18 @@
 ---
 import Layout from "@/layouts/DefaultLayout.astro";
-import { localizePathname } from "@/lib/linking";
-import * as m from "@/paraglide/messages.js";
-import { languageTag } from "@/paraglide/runtime";
 ---
 
 <Layout title="404: Not found">
   <div class="flex flex-col gap-y-4 items-center">
     <h1 class="text-4xl">
       <span class="text-orange-700">404:</span>
-      <span>{m.notfound}</span>
+      <span>Not Found</span>
     </h1>
 
     <div class="border border-zinc-700 rounded px-2 py-1">
       {Astro.url.pathname}
     </div>
 
-    <a
-      class="underline hover:text-orange-700"
-      href={localizePathname("/", languageTag())}
-    >
-      {m.homepage}
-    </a>
+    <a class="underline hover:text-orange-700" href="/">Homepage</a>
   </div>
 </Layout>
