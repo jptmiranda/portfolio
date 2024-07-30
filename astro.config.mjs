@@ -1,16 +1,18 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
+import webVitals from '@astrojs/web-vitals';
 import compress from 'astro-compress';
 import icon from 'astro-icon';
 import robotsTxt from 'astro-robots-txt';
 import { defineConfig } from 'astro/config';
 
-import webVitals from '@astrojs/web-vitals';
+import db from '@astrojs/db';
 
 // https://astro.build/config
 export default defineConfig({
     site: 'https://jptmiranda.com/',
+    output: 'hybrid',
     i18n: {
         locales: ['en', 'pt'],
         defaultLocale: 'en',
@@ -42,5 +44,6 @@ export default defineConfig({
             },
         }),
         webVitals(),
+        db(),
     ],
 });
