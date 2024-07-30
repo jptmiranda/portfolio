@@ -1,3 +1,4 @@
+import db from '@astrojs/db';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -7,11 +8,12 @@ import icon from 'astro-icon';
 import robotsTxt from 'astro-robots-txt';
 import { defineConfig } from 'astro/config';
 
-import db from '@astrojs/db';
+import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
     site: 'https://jptmiranda.com/',
+    adapter: netlify(),
     output: 'hybrid',
     i18n: {
         locales: ['en', 'pt'],
