@@ -14,9 +14,9 @@ import netlify from '@astrojs/netlify';
 export default defineConfig({
     site: 'https://jptmiranda.com/',
     adapter: netlify(),
-    output: 'hybrid',
+    output: 'server',
     i18n: {
-        locales: ['en', 'pt'],
+        locales: ['en'],
         defaultLocale: 'en',
     },
     integrations: [
