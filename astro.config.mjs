@@ -8,13 +8,13 @@ import icon from 'astro-icon';
 import robotsTxt from 'astro-robots-txt';
 import { defineConfig } from 'astro/config';
 
-import netlify from '@astrojs/netlify';
+import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
     site: 'https://jptmiranda.com/',
-    adapter: netlify(),
     output: 'server',
+    adapter: cloudflare(),
     i18n: {
         locales: ['en'],
         defaultLocale: 'en',
