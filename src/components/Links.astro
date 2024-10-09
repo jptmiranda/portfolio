@@ -21,9 +21,10 @@ import Anchor from "./Anchor.astro";
     </Anchor>
 
     <button
-      type="button"
-      onclick="navigator.clipboard.writeText('joao.t.m@proton.me')"
+    type="button"
+    onclick="navigator.clipboard.writeText('joao.t.m@proton.me')"
       class="w-fit hover:bg-zinc-950 hover:text-orange-700 hover:p-1 hover:-m-1 hover:rounded"
+      aria-label="Copy email"
     >
       <Icon class="text-xl" name="carbon:copy" />
     </button>
