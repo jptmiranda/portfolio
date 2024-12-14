@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "CascadiaCode";
-  src: url("/fonts/CascadiaCode.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'CascadiaCode';
+    src: url('/fonts/cascadia-code.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
