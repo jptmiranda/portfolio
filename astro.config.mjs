@@ -1,12 +1,10 @@
-import mdx from "@astrojs/mdx";
+import cloudflare from "@astrojs/cloudflare";
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import compress from "astro-compress";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
-
-import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,9 +16,6 @@ export default defineConfig({
     defaultLocale: "en",
   },
   integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
     icon({
       include: {
         carbon: ["launch", "copy"],
@@ -30,18 +25,8 @@ export default defineConfig({
     compress(),
     robotsTxt(),
     sitemap(),
-    mdx({
-      syntaxHighlight: "shiki",
-      shikiConfig: {
-        theme: "min-dark",
-        transformers: [
-          {
-            pre(node) {
-              delete node.properties.tabindex;
-            },
-          },
-        ],
-      },
-    }),
   ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
