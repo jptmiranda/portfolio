@@ -1,7 +1,6 @@
 import cloudflare from "@astrojs/cloudflare";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
-import compress from "astro-compress";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import { defineConfig, fontProviders } from "astro/config";
@@ -22,9 +21,9 @@ export default defineConfig({
         twemoji: ["flag-united-states", "flag-portugal"],
       },
     }),
-    compress(),
     robotsTxt(),
     sitemap(),
+    (await import("@playform/compress")).default(),
   ],
   vite: {
     plugins: [tailwindcss()],
