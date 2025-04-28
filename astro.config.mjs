@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import compress from "astro-compress";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,5 +28,22 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
+  },
+  experimental: {
+    fonts: [
+      {
+        provider: "local",
+        name: "CascadiaCode",
+        cssVariable: "--font-cascadia-code",
+        variants: [
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/cascadia-code.woff2"],
+            display: "swap",
+          },
+        ],
+      },
+    ],
   },
 });
