@@ -1,6 +1,5 @@
 import cloudflare from "@astrojs/cloudflare";
 import sitemap from "@astrojs/sitemap";
-import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
@@ -25,9 +24,6 @@ export default defineConfig({
     sitemap(),
     (await import("@playform/compress")).default(),
   ],
-  vite: {
-    plugins: [tailwindcss()],
-  },
   experimental: {
     fonts: [
       {
