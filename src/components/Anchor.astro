@@ -1,17 +1,29 @@
 ---
 export interface Props {
   href: string;
-  newTab?: boolean;
+  "new-tab"?: boolean;
 }
 
-const { href, newTab = false } = Astro.props;
+const { href, "new-tab": newTab = false } = Astro.props;
 ---
 
-<a
-  class="w-fit flex items-center gap-x-2 hover:bg-zinc-950 hover:text-orange-700 hover:p-1 hover:-m-1 hover:rounded-sm"
-  rel="noopener noreferrer"
-  href={href}
-  target={newTab ? "_blank" : undefined}
->
+<a rel="noopener noreferrer" href={href} target={newTab ? "_blank" : undefined}>
   <slot />
 </a>
+
+<style>
+  a {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    &:hover {
+      background-color: var(--color-background-darker);
+      color: var(--color-primary);
+      padding: 0.25rem;
+      margin: -0.25rem;
+      border-radius: 0.25rem;
+    }
+  }
+</style>

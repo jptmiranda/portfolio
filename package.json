@@ -13,18 +13,14 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/cloudflare": "^12.5.1",
     "@astrojs/sitemap": "^3.3.1",
-    "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.7.6",
     "@playform/compress": "^0.1.9",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
-    "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.2.8",
-    "@iconify-json/twemoji": "^1.2.2",
-    "@tailwindcss/postcss": "^4.1.4",
-    "@tailwindcss/typography": "^0.5.16"
+    "@iconify-json/twemoji": "^1.2.2"
   }
 }

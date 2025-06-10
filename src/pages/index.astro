@@ -4,47 +4,64 @@ import Layout from "@/layouts/DefaultLayout.astro";
 ---
 
 <Layout title="dot">
-  <h1 class="text-xl">João "dot" Miranda</h1>
+  <h1>João "dot" Miranda</h1>
 
-  <h2 class="text-zinc-400 leading-none mt-1">
+  <h2>
     <span>Full Stack Developer</span>
-    <span
-      class="inline-block align-middle size-1 bg-orange-700 rounded-full animate-pulse"
-    ></span>
+
+    <span class="pulse-circle"></span>
+
     <span>Portuguese</span>
   </h2>
 
-  <div class="flex flex-col gap-y-6 mt-10">
-    <p class="leading-relaxed">
-      Hello, I'm a full-stack developer with nearly three years of experience
-      specializing in web solutions. My journey in the web development world has
-      led me to work on a diverse range of projects, from maintaining and
-      revamping company websites to developing backoffice applications and
-      tools.
-    </p>
+  <p>
+    Hello, I'm a full-stack developer with nearly three years of experience
+    specializing in web solutions. My journey in the web development world has
+    led me to work on a diverse range of projects, from maintaining and
+    revamping company websites to developing backoffice applications and tools.
+  </p>
 
-    <p class="leading-relaxed">
-      A highlight in my career has been integrating bank APIs to facilitate home
-      loan credit simulations. These integrations have provided users with
-      insights to make informed financial decisions without making a single
-      transaction.
-    </p>
+  <p>
+    A highlight in my career has been integrating bank APIs to facilitate home
+    loan credit simulations. These integrations have provided users with
+    insights to make informed financial decisions without making a single
+    transaction.
+  </p>
 
-    <p class="leading-relaxed">
-      Always eager to explore, one of my main sources of motivation is the
-      exploration of new technologies, so I am constantly searching for next new
-      thing in the digital world. I also have some experience in DevOps since I
-      am always looking to improve CI/CD flows on the projects I work on.
-    </p>
-  </div>
+  <p>
+    Always eager to explore, one of my main sources of motivation is the
+    exploration of new technologies, so I am constantly searching for next new
+    thing in the digital world. I also have some experience in DevOps since I am
+    always looking to improve CI/CD flows on the projects I work on.
+  </p>
 
-  <!-- <div class="mt-10 flex flex-col items-start gap-y-1.5">
-    <Anchor href="/projects">Projects</Anchor>
-
-    <Anchor href="/jobs">Jobs</Anchor>
-  </div> -->
-
-  <hr class="w-full border-b-[1px] border-zinc-700 my-6" />
+  <hr class="separator" />
 
   <Links />
 </Layout>
+
+<style>
+  @keyframes pulse {
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  .pulse-circle {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    line-height: 1.625;
+  }
+</style>

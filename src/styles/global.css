@@ -1,13 +1,59 @@
-@import "tailwindcss";
+:root {
+  --color-foreground: #fff;
+  --color-background: #18181b;
+  --color-background-darker: #09090b;
+  --color-primary: #ca3500;
+}
 
-@plugin '@tailwindcss/typography';
+* {
+  box-sizing: border-box;
+}
 
-@theme {
-  --color-foreground: hsl(var(--color-foreground));
-  --color-background: hsl(var(--color-background));
-  --color-primary: hsl(var(--color-primary));
-  --color-secondary: hsl(var(--color-secondary));
-  --color-accent: hsl(var(--color-accent));
+html,
+body {
+  font-size: 16px;
+  font-family: var(--font-cascadia-code);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  hyphens: auto;
+  min-height: 100vh;
+  max-width: 42rem;
+}
 
-  --font-cascadia-code: var(--font-cascadia-code);
+@media (min-width: 768px) {
+  html,
+  body {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html,
+  body {
+    padding: 2rem;
+  }
+}
+
+.separator {
+  width: 100%;
+  border-bottom: 1px solid var(--color-foreground);
+  margin-block: 1.5rem;
+}
+
+a {
+  color: var(--color-foreground);
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: var(--color-foreground);
 }
