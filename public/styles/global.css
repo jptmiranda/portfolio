@@ -19,8 +19,12 @@
 
 html,
 body {
+  min-height: 100vh;
   font-size: 16px;
   font-family: "Cascadia Code", Helvetica, sans-serif;
+}
+
+body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   margin-inline: auto;
@@ -29,19 +33,16 @@ body {
   justify-content: center;
   padding: 1rem;
   hyphens: auto;
-  min-height: 100vh;
   max-width: 42rem;
 }
 
-@media (min-width: 768px) {
-  html,
+@media (width >= 768px) {
   body {
     padding: 1.5rem;
   }
 }
 
-@media (min-width: 768px) {
-  html,
+@media (width >= 1024px) {
   body {
     padding: 2rem;
   }
