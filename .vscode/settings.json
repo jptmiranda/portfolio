@@ -1,5 +1,7 @@
 {
   "editor.quickSuggestions": {
     "strings": true
-  }
+  },
+  "oxc.enable": true,
+  "oxc.lint.run": "onSave"
 }
