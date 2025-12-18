@@ -4,7 +4,6 @@
   "version": "1.1.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro check && astro build --remote",
     "preview": "astro preview",
     "astro": "astro"
@@ -12,9 +11,10 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/cloudflare": "^12.5.1",
+    "@astrojs/node": "^9.5.1",
     "@astrojs/sitemap": "^3.3.1",
-    "astro": "^5.7.6",
     "@playform/compress": "^0.1.9",
+    "astro": "^5.7.6",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
     "typescript": "^5.8.3"

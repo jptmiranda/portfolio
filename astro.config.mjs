@@ -1,4 +1,4 @@
-import cloudflare from "@astrojs/cloudflare";
+import node from "@astrojs/node";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
@@ -6,8 +6,8 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
   site: "https://jptmiranda.com/",
-  output: "server",
-  adapter: cloudflare(),
+  output: "static",
+  adapter: node({ mode: "standalone" }),
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
