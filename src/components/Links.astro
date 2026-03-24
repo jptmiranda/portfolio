@@ -3,62 +3,30 @@ import { Icon } from "astro-icon/components";
 import Anchor from "./Anchor.astro";
 ---
 
-<div class="links-container">
+<div class="flex flex-col items-start gap-y-3">
   <Anchor href="https://github.com/jptmiranda" new-tab>
     <span>Github</span>
-    <Icon class="icon" name="carbon:launch" />
+    <Icon class="size-5" name="carbon:launch" />
   </Anchor>
 
   <Anchor href="https://www.linkedin.com/in/jptmiranda" new-tab>
     <span>LinkedIn</span>
-    <Icon class="icon" name="carbon:launch" />
+    <Icon class="size-5" name="carbon:launch" />
   </Anchor>
 
-  <div id="email-link">
+  <div class="flex items-center gap-x-2">
     <Anchor href="mailto:joao.t.m@proton.me" new-tab>
       <span>Email</span>
-      <Icon class="icon" name="carbon:launch" />
+      <Icon class="size-5" name="carbon:launch" />
     </Anchor>
 
     <button
       type="button"
       onclick="navigator.clipboard.writeText('joao.t.m@proton.me')"
-      id="copy-button"
       aria-label="Copy email"
+      class="w-fit hover:bg-background-darker hover:text-primary hover:p-1 hover:-m-1 hover:rounded hover:cursor-pointer"
     >
-      <Icon class="icon" name="carbon:copy" />
+      <Icon class="size-5" name="carbon:copy" />
     </button>
   </div>
 </div>
-
-<style>
-  .links-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 0.75rem;
-
-    .icon {
-      font-size: 1.25rem;
-    }
-
-    #email-link {
-      display: flex;
-      align-items: center;
-      column-gap: 0.5rem;
-
-      #copy-button {
-        width: fit-content;
-
-        &:hover {
-          background-color: var(--color-background-darker);
-          color: var(--color-primary);
-          padding: 0.25rem;
-          margin: -0.25rem;
-          border-radius: 0.25rem;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-</style>

@@ -3,11 +3,15 @@ import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   site: "https://jptmiranda.com/",
   output: "static",
   adapter: node({ mode: "standalone" }),
+  vite: {
+    plugins: [tailwindcss()],
+  },
   i18n: {
     locales: ["en"],
     defaultLocale: "en",

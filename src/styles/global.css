@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("/fonts/cascadia-code.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-foreground: #fff;
+  --color-background: #18181b;
+  --color-background-darker: #09090b;
+  --color-primary: #ca3500;
+  --font-sans: "Cascadia Code", Helvetica, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    @apply min-h-screen text-base font-sans;
+  }
+
+  body {
+    @apply bg-background text-foreground mx-auto flex flex-col justify-center p-4 md:p-6 lg:p-8 max-w-[42rem];
+    hyphens: auto;
+  }
+
+  a {
+    @apply text-foreground;
+  }
+
+  button {
+    @apply bg-transparent outline-none border-none m-0 p-0 text-foreground;
+  }
+}

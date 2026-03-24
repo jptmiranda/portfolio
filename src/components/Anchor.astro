@@ -7,23 +7,11 @@ export interface Props {
 const { href, "new-tab": newTab = false } = Astro.props;
 ---
 
-<a rel="noopener noreferrer" href={href} target={newTab ? "_blank" : undefined}>
+<a
+  rel="noopener noreferrer"
+  href={href}
+  target={newTab ? "_blank" : undefined}
+  class="w-fit flex items-center gap-x-2 hover:bg-background-darker hover:text-primary hover:p-1 hover:-m-1 hover:rounded"
+>
   <slot />
 </a>
-
-<style>
-  a {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-
-    &:hover {
-      background-color: var(--color-background-darker);
-      color: var(--color-primary);
-      padding: 0.25rem;
-      margin: -0.25rem;
-      border-radius: 0.25rem;
-    }
-  }
-</style>
