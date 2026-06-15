@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  site: "https://jptmiranda.com/",
+  site: "https://joaomiranda.eu/",
   output: "static",
   adapter: node({ mode: "standalone" }),
   vite: {
